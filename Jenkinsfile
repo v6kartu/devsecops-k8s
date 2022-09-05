@@ -9,9 +9,9 @@ pipeline {
             }
         }  
 
-      stage('Build Artifact') {
-          steps {
-            sh "mvn test"
+      stage('Unit test') {
+            steps {
+              sh "mvn test"
             
             }
         }    
